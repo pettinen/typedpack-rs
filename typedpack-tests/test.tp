@@ -1,0 +1,116 @@
+struct TestBool {
+    bool foo = 0;
+}
+
+struct TestUint8 {
+    uint8 foo = 0;
+}
+
+struct TestInt8 {
+    int8 foo = 0;
+}
+
+struct TestUint16 {
+    uint16 foo = 0;
+}
+
+struct TestInt16 {
+    int16 foo = 0;
+}
+
+struct TestUint32 {
+    uint32 foo = 0;
+}
+
+struct TestInt32 {
+    int32 foo = 0;
+}
+
+struct TestUint64 {
+    uint64 foo = 0;
+}
+
+struct TestInt64 {
+    int64 foo = 0;
+}
+
+struct TestString {
+    string foo = 0;
+}
+
+struct TestBytes {
+    bytes foo = 0;
+}
+
+struct TestBytesLength0 {
+    bytes0 foo = 0;
+}
+
+struct TestBytesLength32 {
+    bytes32 foo = 0;
+}
+
+struct TestBytesLength65536 {
+    bytes65536 foo = 0;
+}
+
+struct TestArrayOfBytesLength2 {
+    bytes2[] foo = 0;
+}
+
+struct TestArrayOfString {
+    string[] foo = 0;
+}
+
+struct TestArrayOfArrayOfString {
+    string[][] foo = 0;
+}
+
+struct TestOptional {
+    optional string foo = 0;
+}
+
+struct TestNullable {
+    nullable string foo = 0;
+}
+
+struct TestOptionalNullable {
+    optional nullable string foo = 0;
+}
+
+struct TestMultipleFields {
+    string foo = 0;
+    string bar = 2;
+}
+
+struct TestNestedMap {
+    TestString foo = 0;
+}
+
+struct TestArrayOfMaps {
+    TestString[] foo = 0;
+}
+
+struct TestNestedArray {
+    int32[][][] foo = 0;
+}
+
+enum TestEnum {
+    Foo = 0;
+    Bar = 1;
+}
+
+struct if {
+    int32 else = 0;
+}
+
+enum while {
+    for = 0;
+}
+
+struct TestEmptyStruct {}
+
+enum TestTaggedEnum {
+    TestBool A = 0;
+    TestUint8 B = 1;
+}

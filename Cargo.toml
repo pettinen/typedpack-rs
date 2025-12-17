@@ -1,0 +1,16 @@
+[workspace]
+resolver = "3"
+members = [
+    "typedpack",
+    "typedpack-cli",
+    "typedpack-codegen",
+    "typedpack-tests",
+]
+
+[workspace.package]
+edition = "2024"
+license = "MIT"
+
+[workspace.dependencies]
+typedpack.path = "typedpack"
+typedpack-codegen.path = "typedpack-codegen"
